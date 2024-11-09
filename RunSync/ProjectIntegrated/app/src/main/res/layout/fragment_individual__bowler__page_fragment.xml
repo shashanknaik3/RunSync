@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Individual_Bowler_Page_fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/lightpurple">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="92dp"
+            android:layout_height="49dp"
+            android:background="@color/lightpurple"
+            android:layout_marginLeft="-12dp"
+            android:contentDescription="Back Button"
+
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.016" />
+
+        <TextView
+            android:id="@+id/bname"
+            android:layout_width="136dp"
+            android:layout_height="52dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="0.906" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="163dp"
+            android:layout_height="148dp"
+            android:src="@drawable/logo_cricket"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.87"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/lightpurple"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/lightpurple"
+            android:text="Bowling"
+            android:textSize="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Matches" />
+
+                <TextView
+                    android:id="@+id/tvb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Innings" />
+
+                <TextView
+                    android:id="@+id/tvb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Overs" />
+
+                <TextView
+                    android:id="@+id/overs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0.0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Maidens" />
+
+                <TextView
+                    android:id="@+id/maidens"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Wickets" />
+
+                <TextView
+                    android:id="@+id/wickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Runs" />
+
+                <TextView
+                    android:id="@+id/runsGiven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:background="@drawable/box_background"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="B.Bowling" />
+
+                <TextView
+                    android:id="@+id/bestFigures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:background="@drawable/box_background"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Eco-Rate" />
+
+                <TextView
+                    android:id="@+id/economy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Strike Rate" />
+
+                <TextView
+                    android:id="@+id/tvb18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0.00"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Average" />
+
+                <TextView
+                    android:id="@+id/averageB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0.00"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/box_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <TextView
+                    android:id="@+id/tvb21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Wides" />
+
+                <TextView
+                    android:id="@+id/tvb22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="No Balls" />
+
+                <TextView
+                    android:id="@+id/tvb24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:background="@drawable/box_background"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="Dots" />
+
+                <TextView
+                    android:id="@+id/tvb26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:background="@drawable/box_background"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:text="4 Wickets" />
+
+                <TextView
+                    android:id="@+id/fourwickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:background="@drawable/box_background"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvb29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:text="5 Wickets" />
+
+                <TextView
+                    android:id="@+id/fivewickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/lightpurple"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+
+</LinearLayout>

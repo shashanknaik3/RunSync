@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ppl"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/guest"
+            android:layout_width="247dp"
+            android:layout_height="61dp"
+            android:background="#673AB7"
+            android:drawableLeft="@drawable/baseline_person_2_24"
+            android:paddingLeft="60px"
+            android:text="Continue with Guest"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.861" />
+
+        <Button
+            android:id="@+id/google"
+            android:layout_width="251dp"
+            android:layout_height="74dp"
+            android:background="#673AB7"
+            android:paddingLeft="60px"
+            android:text="        Connect with Google"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.729" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="37dp"
+            android:layout_height="38dp"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.243"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.717"
+            app:srcCompat="@drawable/ggl" />
+
+        <ImageView
+            android:id="@+id/home_img"
+            android:layout_width="266dp"
+            android:layout_height="296dp"
+            android:src="@drawable/logo_cricket"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.565"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="254dp"
+            android:layout_height="75dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="RunSync"
+            android:textColor="@color/black"
+            android:textSize="55dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.045" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RunSyncProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".Finalwinnerlotty"
+            android:exported="false" />
+        <activity
+            android:name=".FirstInningsCelebrationLottie"
+            android:exported="false" />
+        <activity
+            android:name=".LottyAnimation"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".graphtwo"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".graph2" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".selectInnings"
+            android:exported="false" />
+        <activity
+            android:name=".graph"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".graph_display" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".BatsmanStatsPage"
+            android:exported="false" />
+        <activity
+            android:name=".bowlers_list"
+            android:exported="false" />
+        <activity
+            android:name=".batsmans_list"
+            android:exported="false" />
+        <activity
+            android:name=".selctTeam"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".wicket" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".ScoreCard"
+            android:exported="false" />
+        <activity
+            android:name=".SelectOpeningPlayers"
+            android:exported="false" />
+        <activity
+            android:name=".start_match_details"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

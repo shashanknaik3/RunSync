@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".start_match_details">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/lightpurple"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:text="Team Names"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/hostname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:hint="Enter Host Team"
+        android:layout_marginBottom="3dp"
+        android:inputType="text"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/vistorname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter Visitor Team"
+        android:inputType="text"
+        android:layout_marginBottom="5dp"
+        android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:text="Toss"
+            android:textSize="20dp"
+            android:id="@+id/toss"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="22dp"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toss Won By "
+        android:textColor="@color/white"
+        android:background="@color/lightpurple"
+        android:textSize="20dp"
+        />
+    <RadioGroup
+        android:id="@+id/hostGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:text="Host Team"
+            android:id="@+id/Toss_host"
+            android:layout_height="50dp">
+        </RadioButton>
+
+        <RadioButton
+
+            android:layout_width="match_parent"
+            android:text="Visitor team"
+            android:id="@+id/Toss_visitor"
+            android:layout_marginBottom="10dp"
+            android:layout_height="50dp">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Opted To"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/lightpurple"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:layout_marginTop="2dp"
+        android:id="@+id/optedGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="Bat"
+            android:id="@+id/bat"
+            android:layout_height="50dp">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:text="Bowl"
+            android:id="@+id/bowl"
+            android:layout_marginBottom="10dp"
+            android:layout_height="50dp">
+        </RadioButton>
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/lightpurple"
+        android:layout_marginBottom="3dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Overs"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/overs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Overs">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:text="Start match">
+
+    </Button>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/lightpurple"
+        android:layout_height="80dp">
+
+        <ImageButton
+            android:id="@+id/playerslist"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:background="@color/lightpurple"
+            android:layout_marginRight="130dp"
+            android:contentDescription="Players List"
+            android:src="@drawable/group"></ImageButton>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/lightpurple"
+            android:contentDescription="Graphs"
+            android:src="@drawable/graph"
+            android:id="@+id/graph">
+        </ImageButton>
+
+    </LinearLayout>
+
+</LinearLayout>

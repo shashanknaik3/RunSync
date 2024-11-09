@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SelectOpeningPlayers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1"
+        android:orientation="horizontal"
+        android:background="@color/purple">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Back"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/purple"
+            android:id="@+id/bckbtn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Opening Players"
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvStriker"
+            android:layout_marginTop="20dp"
+            android:text="Striker"
+            android:textColor="@color/purple"
+            android:textSize="25dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/striker"
+            android:hint="Player Name"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+            android:layout_marginTop="20dp"
+            android:text="Non Striker"
+            android:textColor="@color/purple"
+            android:textSize="25dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nonstriker"
+            android:hint="Player Name"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt3"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textColor="@color/purple"
+            android:text="Opening Bowler" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bowler"
+            android:hint="Player Name"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/start_match"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/square_button"
+        android:text="Start Match"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/playtest"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:text="" />
+
+
+</LinearLayout>

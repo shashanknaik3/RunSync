@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title for Second Innings Initialization -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Innings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+    <!-- EditText for Target Score -->
+    <EditText
+        android:id="@+id/editStriker"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Striker's Name"
+        android:inputType="text" />
+
+    <!-- EditText for Overs Played -->
+    <EditText
+        android:id="@+id/editNonStriker"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Non Striker's Name"
+        android:inputType="text" />
+
+    <!-- EditText for Wickets Fallen -->
+    <EditText
+        android:id="@+id/editOpeningBowler"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Opening Bowlers Name"
+        android:inputType="text" />
+
+    <!-- Button to Save and Initialize Second Innings -->
+<!--    <Button-->
+<!--        android:id="@+id/btnSaveSecondInnings"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Save and Initialize"-->
+<!--        android:textSize="16sp"-->
+<!--        android:background="@color/lightpurple"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:layout_marginTop="16dp" />-->
+</LinearLayout>
